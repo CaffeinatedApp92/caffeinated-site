@@ -1,0 +1,123 @@
+:root {
+  --bg: #FAEEDA;
+  --surface: #FFFFFF;
+  --text: #2A1D13;
+  --text-secondary: #6B5A47;
+  --accent: #BA7517;
+  --accent-dark: #854F0B;
+  --border: #E8DCC5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.brand .bolt { font-size: 22px; }
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.effective-date {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin: 0 0 32px;
+}
+
+.glance {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.glance-item { display: flex; flex-direction: column; gap: 2px; }
+.glance-k { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-secondary); }
+.glance-v { font-size: 14px; font-weight: 500; }
+
+section { margin-bottom: 28px; }
+
+h2 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: var(--accent-dark);
+}
+
+p { margin: 0 0 12px; }
+
+ul { margin: 0 0 12px; padding-left: 20px; }
+li { margin-bottom: 6px; }
+
+.callout {
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0 0 12px;
+}
+
+.home-hero {
+  text-align: center;
+  padding: 60px 0 40px;
+}
+
+.home-hero .bolt-big { font-size: 56px; display: block; margin-bottom: 12px; }
+
+.home-hero h1 { font-size: 34px; }
+
+.home-hero p { color: var(--text-secondary); font-size: 15px; max-width: 440px; margin: 12px auto 0; }
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.links a {
+  color: var(--accent-dark);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links a:hover { text-decoration: underline; }
+
+footer {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-top: 60px;
+}
